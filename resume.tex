@@ -1,0 +1,151 @@
+\documentclass[a4paper,10pt]{article}
+
+%%% PACKAGES
+\usepackage{marvosym}
+\usepackage{fontspec} 						%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip,enumitem} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{titlesec}						%custom \section
+\usepackage[margin=1.0in,rmargin=2.0in]{geometry}
+
+\setlist[itemize]{noitemsep,nolistsep}
+
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%%% FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[ Path = fonts/,
+SmallCapsFont = RobotoCondensed-Regular.ttf,
+BoldFont      = Roboto-Bold.ttf,
+ItalicFont    = Roboto-Italic.ttf
+]
+{Roboto-Regular.ttf}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{1pt}{1pt}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\pagestyle{empty} 		% non-numbered pages
+
+\font\fb=''[cmr10]'' 	%for use with \LaTeX command
+
+%%% TITLE
+{\Huge Tyler \textsc{Boire}}
+
+%%% SECTIONS
+
+\begin{tabular}{rl}
+    \textsc{Email:}   & \href{mailto:tylerboire@gmail.com}{tylerboire@gmail.com}\\
+    \textsc{Website:} & \href{https://tylerboire.github.io}{https://tylerboire.github.io}\\
+    \textsc{GitHub:}  & \href{https://github.com/TylerBoire}{https://github.com/TylerBoire}
+\end{tabular}
+
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+
+ \textsc{January 2018} ---            & \textbf {Security Consultant} at Verizon \\
+ \textsc{Present} \hphantom{---} & \footnotesize{
+        \vspace{-2mm}
+        \begin{itemize}[leftmargin=*]
+            \item Provide customers with Internal, External and Wireless penetration tests
+            \item Identify and reinforced good security practices deployed in customer networks
+            \item Provide customers with detailed reports regarding their vulnerabilities
+            \item Help maintain infrastructure used in day to day operations
+            \item Work towards automating common tasks and procedures
+            \item Assist in designing and implementing repeatable and reliable gold images for consultant laptops and VMs
+        \end{itemize}
+        \vspace*{-\baselineskip}
+    }\\
+ \multicolumn{2}{c}{} \\
+
+ \textsc{June 2016} ---            & \textbf {Threat Specialist} at Palo Alto Networks \\
+ \textsc{January 2018} \hphantom{---} & \footnotesize{
+        \vspace{-2mm}
+        \begin{itemize}[leftmargin=*]
+            \item False positive and false negative verdict determination
+            \begin{itemize}
+                \item Sandbox dynamic analysis, URL categorization, C2 communication detection
+            \end{itemize}
+            \item Coverage for emerging vulnerabilities and malware variants
+            \item Triage reports of perceived product vulnerabilities 
+            \item IPS signature development, improvement, and tuning 
+            \item Aided in identification and signatures for various malware families.
+            \item Automated information gathering via internal REST APIs with Python
+            \item Maintained internal replication lab
+        \end{itemize}
+        \vspace*{-\baselineskip}
+    }\\
+ \multicolumn{2}{c}{} \\
+
+ \textsc{December 2015} ---            & \textbf {Network Admin \& Researcher} at Leahy Center for Digital Investigation \\
+ \textsc{May 2016} \hphantom{---} & \footnotesize{
+        \vspace{-2mm}
+         \begin{itemize}[leftmargin=*]
+            \item Maintained network functionality
+            \item Oversaw junior admins and maintained critical infrastructure 
+            \item Performed vulnerability assessments and inventory tracking
+            \item Improved documentation on existing procedures
+            \item Researched forensic uses for JTAG/ChipOff techniques
+            \item Provided consultation on Amazon Alexa research
+        \end{itemize}
+        \vspace*{-\baselineskip}
+    }\\
+\multicolumn{2}{c}{} \\
+
+ \textsc{June 2015} ---            & \textbf{Incident Response Intern} at Dell Secureworks\\
+ \textsc{April 2016} \hphantom{---} & \footnotesize{
+         \vspace{-2mm}
+         \begin{itemize}[leftmargin=*]
+            \item Aided the Threat Intelligence department in analyzing a kill chain for Threat Group 3390
+            \item Reported on threat assessments of hostile countries and capabilities based on OSINT
+            \item Consolidated and reworked best practice and remediation suggestions.
+            \item Reviewed SANS GCIH material with new hires prep for their test.
+        \end{itemize}
+        \vspace*{-\baselineskip}
+    }\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Dec 2012} ---            & \textbf{Sr.Helpdesk/Helpdesk} at Champlain College\\
+\textsc{Nov 2016} \hphantom{---} & \footnotesize{ I was responsible for immediate response to classroom issues, long term projects and directing other help-desk techs to complete tickets.
+         \vspace{-2mm}
+        \vspace*{-\baselineskip}
+    }\\
+\multicolumn{2}{c}{}  \\
+
+\textsc{Sept 2013} ---            & \textbf{Teaching Assistant} at Champlain College\\
+\textsc{May 2014} \hphantom{---} & \footnotesize{ I was responsible for ensuring labs ran smoothly and working 1-on-1 with students who had questions during class. 
+         \vspace{-2mm}
+        \vspace*{-\baselineskip}
+    }\\
+\multicolumn{2}{c}{} \\
+
+\textsc{May 2013} ---            & \textbf{Network Operations Center Technician} at Westelcom\\
+\textsc{Aug 2013} \hphantom{---} & \footnotesize{ I worked in the Network Operation Center, providing over the phone support to customers.
+         \vspace{-2mm}
+        \vspace*{-\baselineskip}
+    }\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+\section{Confrences \& CTF's}
+\begin{tabular}{rl}
+    \textsc{NECCDC}: & \footnotesize{ Defended enterprise-like network from professional pen-testers }\\
+    \textsc{Confrences}: & \footnotesize{ Defcon 22, Defcon 23, JailbreakCon }\\
+    \textsc{CTFs}: & \footnotesize{ MITRE CTF, CSAW, GCHQ Holiday CTF }\\
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{rl}
+    \hspace{4mm}\textsc{May 2016} & \footnotesize{Bachelor's degree in  Computer Networking \& Information Security, Champlain College}\\
+                          & \footnotesize{Specialization in Cyber-Security \& Minor in Digital Forensics}\\
+    \hspace{4mm}\textsc{May 2012} & \footnotesize{College prep courses, Clinton Community College}\\
+                          & \footnotesize{15 College credits over 2 years while in High-school}\\
+\end{tabular}
+
+\end{document}
