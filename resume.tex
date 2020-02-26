@@ -8,6 +8,7 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{titlesec}						%custom \section
 \usepackage[margin=1.0in,rmargin=2.0in]{geometry}
+\usepackage{multicol}
 
 \setlist[itemize]{noitemsep,nolistsep}
 
@@ -27,6 +28,9 @@ ItalicFont    = Roboto-Italic.ttf
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{1pt}{1pt}
 
+%%% WIDTH BETWEEN COLUMNS 
+\setlength{\columnsep}{1cm}
+
 %%% BEGIN DOCUMENT
 \begin{document}
 
@@ -40,24 +44,115 @@ ItalicFont    = Roboto-Italic.ttf
 %%% SECTIONS
 
 \begin{tabular}{rl}
-    \textsc{Email:}   & \href{mailto:tylerboire@gmail.com}{tylerboire@gmail.com}\\
+    \textsc{Email:}   & \href{mailto:tyler.boire@gmail.com}{tyler.boire@gmail.com}\\
     \textsc{Website:} & \href{https://tylerboire.github.io}{https://tylerboire.github.io}\\
     \textsc{GitHub:}  & \href{https://github.com/TylerBoire}{https://github.com/TylerBoire}
 \end{tabular}
 
+
+
+\begin{multicols}{2}
+
+\section{Communication Skills:}
+
+\begin{itemize}[leftmargin=*]
+    \item Consulting for businesses up to \\ Fortune 50 space. 
+    \item Experience in interacting with \\ technical and management audiences
+    \item Provide written and verbal guidance on improving security posture.
+    \item Write documentation and guidance on technical processes \& policy. 
+\end{itemize}
+
+\section{Security Strategy: }
+\begin{itemize}[leftmargin=*]
+    \item Defense-in-depth models
+    \item Kill-chain analysis and interdiction. 
+    \item Firewall config review and best \\ practices layer 4 and 7
+    \item Network logging and alerting
+    \item Least privileged models
+    \item Knowledge of multiple firewall, IDS and IPS vendors
+    \item Experience with multiple EDR, AV, and Network security products
+    \item Experience with PCI-DSS, HIPAA, ISO 27001, NIST 800-53
+\end{itemize}
+
+\section{DFIR:}
+
+\begin{itemize}[leftmargin=*]
+
+    \item Host, Network, and Memory forensics
+    \item File recovery and slack space analysis
+    \item Static and Dynamic Malware Analysis
+    \item Experience building Incident \\ Response plans
+    \item IOC and Threat Intelligence \\ aggregation
+    \item Log analysis
+\end{itemize}
+
+\columnbreak
+
+\section{Offensive Security:}
+
+\textbf{Network and Host recon:}
+\begin{itemize}[leftmargin=*]
+    \item Port, Host and Service discovery
+    \item Vulnerability identification
+    \item OSINT and Confidential document discovery
+    \item Password leak identifications
+\end{itemize}
+
+
+\textbf{Exploitation:}
+\begin{itemize}[leftmargin=*]
+    \item OWASP Top 10 familiarity
+    \item Use and modification of public exploits
+    \item LLMNR \& WPAD poisoning
+    \item Kerberos and Service Principal Name abuse.
+    \item Password Cracking using curated \\ dictionaries and rule sets
+    \item Phishing
+\end{itemize}
+        
+\textbf{Physical:}
+\begin{itemize}[leftmargin=*]
+    \item Lock picking
+    \item Door bypass
+    \item Camera placement considerations
+\end{itemize}
+
+\textbf{Wireless Analysis:}
+\begin{itemize}[leftmargin=*]
+    \item WPA cracking attacks including PKMID
+    \item Client Beacon Attacks
+    \item Signal leakage testing
+    \item Evil twin
+    \item Rogue AP
+\end{itemize}
+
+\textbf{Post exploitation:}
+\begin{itemize}[leftmargin=*]
+    \item Shell persistence
+    \item Credential harvesting
+    \item Pivoting between network segments
+    \item Power user identification/hunting
+    \item Privilege escalation
+    \item Identifying incident response and countermeasures
+    \item Living off the land
+\end{itemize}
+
+\end{multicols}
+
+\newpage
+
 \section{Work Experience}
 \begin{tabular}{r|p{11cm}}
 
- \textsc{January 2018} ---            & \textbf {Security Consultant} at Verizon \\
+ \textsc{January 2018} ---            & \textbf {Penetration Tester} at Verizon \\
  \textsc{Present} \hphantom{---} & \footnotesize{
         \vspace{-2mm}
         \begin{itemize}[leftmargin=*]
             \item Provide customers with Internal, External and Wireless penetration tests
-            \item Identify and reinforced good security practices deployed in customer networks
+            \item Identify and reinforce good security practices deployed in customer networks
             \item Provide customers with detailed reports regarding their vulnerabilities
             \item Help maintain infrastructure used in day to day operations
             \item Work towards automating common tasks and procedures
-            \item Assist in designing and implementing repeatable and reliable gold images for consultant laptops and VMs
+            \item Designed and implement repeatable and reliable gold images for consultant laptops and VMs
         \end{itemize}
         \vspace*{-\baselineskip}
     }\\
@@ -111,21 +206,21 @@ ItalicFont    = Roboto-Italic.ttf
 \multicolumn{2}{c}{} \\
 
 \textsc{Dec 2012} ---            & \textbf{Sr.Helpdesk/Helpdesk} at Champlain College\\
-\textsc{Nov 2016} \hphantom{---} & \footnotesize{ I was responsible for immediate response to classroom issues, long term projects and directing other help-desk techs to complete tickets.
+\textsc{Nov 2016} \hphantom{---} & \footnotesize{ Responsible for immediate response to classroom issues, directing other techs to complete tickets and long term projects.
          \vspace{-2mm}
         \vspace*{-\baselineskip}
     }\\
 \multicolumn{2}{c}{}  \\
 
 \textsc{Sept 2013} ---            & \textbf{Teaching Assistant} at Champlain College\\
-\textsc{May 2014} \hphantom{---} & \footnotesize{ I was responsible for ensuring labs ran smoothly and working 1-on-1 with students who had questions during class. 
+\textsc{May 2014} \hphantom{---} & \footnotesize{ Responsible for ensuring labs ran smoothly and working 1-on-1 with students who had questions during class. 
          \vspace{-2mm}
         \vspace*{-\baselineskip}
     }\\
 \multicolumn{2}{c}{} \\
 
 \textsc{May 2013} ---            & \textbf{Network Operations Center Technician} at Westelcom\\
-\textsc{Aug 2013} \hphantom{---} & \footnotesize{ I worked in the Network Operation Center, providing over the phone support to customers.
+\textsc{Aug 2013} \hphantom{---} & \footnotesize{ Worked in the Network Operation Center, providing over the phone support to customers.
          \vspace{-2mm}
         \vspace*{-\baselineskip}
     }\\
@@ -133,19 +228,12 @@ ItalicFont    = Roboto-Italic.ttf
 
 \end{tabular}
 
-\section{Confrences \& CTF's}
-\begin{tabular}{rl}
-    \textsc{NECCDC}: & \footnotesize{ Defended enterprise-like network from professional pen-testers }\\
-    \textsc{Confrences}: & \footnotesize{ Defcon 22, Defcon 23, JailbreakCon }\\
-    \textsc{CTFs}: & \footnotesize{ MITRE CTF, CSAW, GCHQ Holiday CTF }\\
-\end{tabular}
-
 \section{Education}
 \begin{tabular}{rl}
     \hspace{4mm}\textsc{May 2016} & \footnotesize{Bachelor's degree in  Computer Networking \& Information Security, Champlain College}\\
-                          & \footnotesize{Specialization in Cyber-Security \& Minor in Digital Forensics}\\
+                          & \footnotesize{Specialization in Cybersecurity \& Minor in Digital Forensics}\\
     \hspace{4mm}\textsc{May 2012} & \footnotesize{College prep courses, Clinton Community College}\\
-                          & \footnotesize{15 College credits over 2 years while in High-school}\\
 \end{tabular}
+
 
 \end{document}
