@@ -1,5 +1,5 @@
 
 all: resume.pdf
 
-*.pdf: *.tex
+%.pdf: %.tex
 	xelatex $<
